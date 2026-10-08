@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Qualifications & Work Experience</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #1e3c72;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-left: 5px solid #2a5298;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+
+        .card:last-child {
+            margin-bottom: 0;
+        }
+
+        .card h3 {
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            margin-left: 20px;
+        }
+
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .certificate {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .certificate .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .certificate h3 {
+            color: #1e3c72;
+            margin-bottom: 8px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #2a5298;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            background: #1e3c72;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Qualifications & Experience</h1>
+        <p>Certificates, Diplomas, Skills & Professional Experience</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Diplomas Section -->
+        <section>
+            <h2>🎓 Diplomas & Education</h2>
+
+            <div class="card">
+                <h3>Diploma in Information Technology</h3>
+                <p><strong>Manchester College</strong></p>
+                <p class="date">2022 – 2024</p>
+                <p>
+                    Studied programming, web development, databases,
+                    networking and software development.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Level 3 Diploma in Computing</h3>
+                <p><strong>Example College</strong></p>
+                <p class="date">2020 – 2022</p>
+                <p>
+                    Developed practical knowledge of computer systems,
+                    programming and digital technologies.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Certificates Section -->
+        <section>
+            <h2>🏆 Certificates</h2>
+
+            <div class="certificate-grid">
+
+                <div class="certificate">
+                    <div class="icon">📜</div>
+                    <h3>HTML & CSS Certificate</h3>
+                    <p>Web Development Academy</p>
+                    <p class="date">2024</p>
+                </div>
+
+                <div class="certificate">
+                    <div class="icon">💻</div>
+                    <h3>JavaScript Certificate</h3>
+                    <p>Online Learning Platform</p>
+                    <p class="date">2024</p>
+                </div>
+
+                <div class="certificate">
+                    <div class="icon">☁️</div>
+                    <h3>Cloud Computing</h3>
+                    <p>Technology Institute</p>
+                    <p class="date">2023</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Work Experience Section -->
+        <section>
+            <h2>💼 Work Experience</h2>
+
+            <div class="card">
+                <h3>Web Developer</h3>
+                <p><strong>ABC Digital Solutions</strong></p>
+                <p class="date">January 2024 – Present</p>
+
+                <ul>
+                    <li>Created responsive websites using HTML and CSS.</li>
+                    <li>Developed interactive web pages using JavaScript.</li>
+                    <li>Worked with clients to understand project requirements.</li>
+                    <li>Tested websites across different devices and browsers.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>IT Support Assistant</h3>
+                <p><strong>XYZ Services</strong></p>
+                <p class="date">June 2022 – December 2023</p>
+
+                <ul>
+                    <li>Provided technical support to staff and customers.</li>
+                    <li>Installed and maintained computer software.</li>
+                    <li>Troubleshot hardware and software problems.</li>
+                    <li>Maintained records of technical issues.</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section>
+            <h2>🛠️ Skills</h2>
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">Web Design</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Communication</span>
+                <span class="skill">Teamwork</span>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
