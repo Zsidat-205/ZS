@@ -1,2 +1,161 @@
-<https://htmlpreview.github.io/? add before html</https:>
-Zayd Sidat
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website | Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General page styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #172554);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 25px 15px;
+            background: rgba(15, 23, 42, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffffff;
+            background: #2563eb;
+        }
+
+        /* Main homepage section */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+        }
+
+        .hero h1 span {
+            color: #60a5fa;
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #cbd5e1;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        /* Call-to-action button */
+        .button {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #3b82f6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Mobile layout */
+        @media (max-width: 600px) {
+            nav {
+                gap: 5px;
+            }
+
+            nav a {
+                padding: 9px 10px;
+                font-size: 12px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="Skills2.html">Skills</a>
+        <a href="Problem-Solving.html">Problem-Solving</a>
+        <a href="showcase.html">Showcase</a>
+    </nav>
+
+    <main class="hero">
+        <h1>Welcome to <span>My Website!</span></h1>
+
+        <p>
+            Explore my skills, projects and problem-solving journey.
+            Discover what I have learned, the challenges I have tackled,
+            and the projects I have developed along the way.
+        </p>
+
+        <a href="showcase.html" class="button">Explore My Work &rarr;</a>
+    </main>
+
+    <footer>
+        &copy; 2026 My Website. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
