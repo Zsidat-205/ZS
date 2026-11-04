@@ -1,9 +1,168 @@
-<html>
-    <head>
-        <title>Showcase</title> 
-    </head>
-    <body>
-        <h1>My Showcase</h1>
-        <p>This is a simple showcase page.</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Digital Transformation Showcase</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #004d99;
+        }
+
+        #generatedEmail {
+            background-color: #eef;
+            padding: 15px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            border-radius: 5px;
+        }
+
+        .privacy {
+            margin-top: 30px;
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Restaurant Digital Transformation Showcase</h1>
+
+    <h2>Business Context</h2>
+    <p>
+        This webpage demonstrates how web development can support a restaurant's
+        digital transformation strategy. The aim is to improve customer engagement,
+        simplify booking requests, collect customer feedback, and strengthen the
+        restaurant's online presence through integrated digital solutions.
+    </p>
+
+    <h2>Restaurant Contact Details</h2>
+    <p><strong>Name:</strong> Bella Italia Restaurant</p>
+    <p><strong>Phone:</strong> 01234 567890</p>
+    <p><strong>Email:</strong> info@bellaitalia.co.uk</p>
+    <p><strong>Address:</strong> 123 High Street, Manchester, UK</p>
+
+    <h2>Social Media</h2>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://x.com" target="_blank">X (Twitter)</a>
+    </div>
+
+    <h2>Booking Request / Feedback Form</h2>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Booking Request or Feedback:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="button" onclick="generateEmail()">
+            Generate Email
+        </button>
+    </form>
+
+    <div id="generatedEmail"></div>
+
+    <div class="privacy">
+        <h3>GDPR & Privacy Notice</h3>
+        <p>
+            Information entered into this form is not stored in a database.
+            The form only generates an email template for the user.
+        </p>
+        <p>
+            Users should provide consent before sharing personal information.
+            This website follows GDPR principles regarding privacy and data
+            protection.
+        </p>
+        <p>
+            By continuing to use this website, users acknowledge the use of cookies.
+        </p>
+    </div>
+
+</div>
+
+<script>
+function generateEmail() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let emailTemplate =
+`To: info@bellaitalia.co.uk
+From: ${email}
+
+Subject: Customer Enquiry
+
+Dear Bella Italia Restaurant,
+
+My name is ${name}.
+
+${message}
+
+Kind regards,
+${name}`;
+
+    document.getElementById("generatedEmail").textContent = emailTemplate;
+}
+</script>
+
+</body>
 </html>
