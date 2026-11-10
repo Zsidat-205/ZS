@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Page</title>
-<body>
 
 <nav class="navbar">
     <a href="index.html">Home</a>
@@ -23,22 +22,6 @@
     top:0;
     z-index:1000;
 }
-
-#topBtn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#0077b5;
-    color:white;
-    border:none;
-    padding:12px 16px;
-    border-radius:50%;
-    cursor:pointer;
-    display:block;
-}
-
-#topBtn:hover{
-    background:#005f8f;
 
 .navbar a{
     color:white;
@@ -89,6 +72,22 @@
         ul {
             line-height: 1.8;
         }
+        #topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#0077b5;
+    color:white;
+    border:none;
+    padding:12px 16px;
+    border-radius:50%;
+    cursor:pointer;
+    z-index:9999;
+}
+
+#topBtn:hover{
+    background:#005f8f;
+}
     </style>
 </head>
 
@@ -140,6 +139,19 @@
     </div>
 
 </div>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+<script>
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+</script>
 
 </body>
 </html>
