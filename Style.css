@@ -37,27 +37,24 @@ body {
     color: #38bdf8;
 }
 
+/* Hero Section - Original Sunset Photograph */
 .hero {
-    min-height: 100vh;
-    background: linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.45)
-    ),
-    url("https://zsidat-205.github.io/ZS/85161.jpg");
+    height: 100vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://zsidat-205.github.io/ZS/85161.jpg") !important;
 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     color: white;
     padding: 20px;
 }
-
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 15px;
