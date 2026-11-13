@@ -47,11 +47,39 @@
     color: #333;
 }
         header {
-            background-color: #0077b5;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+    height: 60vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("DSCF1493 (1).jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+header p{
+    font-size: 1.2rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 
         .container {
             max-width: 1000px;
@@ -135,6 +163,37 @@
     background: #005f8f;
     transform: translateY(-3px);
 }
+
+.showcase-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0 20px 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.showcase-image:hover {
+    transform: scale(1.02);
+}
+
+
+@media(max-width:768px){
+
+    .hero-banner{
+        height:300px;
+    }
+
+    .hero-banner-content h2{
+        font-size:2rem;
+    }
+
+    .hero-banner-content p{
+        font-size:1rem;
+    }
+
+}
     </style>
 </head>
 <body>
@@ -144,6 +203,7 @@
     <p>Education, Work Experience, Skills and Achievements</p>
 </header>
 
+</div>
 <div class="container">
 
     <div class="section">
@@ -249,6 +309,7 @@
 
 <div class="section">
     <h2>Project 1 - Business Intelligence Presentation Project</h2>
+    <img src="DSCF1612 (1).jpg" alt="Photography Portfolio" class="showcase-image">
 
     <p><strong>Role:</strong> Student Researcher and Presentation Contributor</p>
 
@@ -280,6 +341,7 @@
 
 <div class="section">
     <h2>Project 2 - Currys PLC Customer Service & Operations Experience</h2>
+    <img src="DSCF1599_1.jpg" alt="Professional Experience" class="showcase-image">
 
     <p><strong>Role:</strong> Warehouse and Sales Colleague</p>
 
