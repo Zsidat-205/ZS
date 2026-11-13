@@ -2,7 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayd Sidat | Contact</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: #111827;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #4ea5ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h1, .card h2 {
+            color: #0077b5;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            background: #f8f9fb;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #0077b5;
+            margin-top: 20px;
+        }
+
+        .contact-item h3 {
+            color: #0077b5;
+            margin-bottom: 8px;
+        }
+
+        .contact-item a {
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item ul {
+            list-style-position: inside;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0077b5;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 9999;
+            transition: 0.3s;
+        }
+
+        #topBtn:hover {
+            background: #005f8f;
+        }
+
+        @media(max-width: 768px) {
+            .navbar a {
+                margin: 0 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
 <nav class="navbar">
     <a href="index.html">Home</a>
@@ -13,121 +142,45 @@
     <a href="Contacts.html">Contact</a>
 </nav>
 
-    <style>
-        .navbar{
-    background:#111827;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.navbar a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
-}
-
-.navbar a:hover{
-    color:#4ea5ff;
-}
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        .contact-card {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-left: 5px solid #0077b5;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #0077b5;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            line-height: 1.8;
-        }
-        #topBtn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#0077b5;
-    color:white;
-    border:none;
-    padding:12px 16px;
-    border-radius:50%;
-    cursor:pointer;
-    z-index:9999;
-}
-
-#topBtn:hover{
-    background:#005f8f;
-}
-    </style>
-</head>
-
-<body>
-
 <div class="container">
 
-    <h1>Contact Me</h1>
+    <section class="card">
+        <h1>Contact Me</h1>
+        
+        <Image src="image_generation_content/7647724147223798849" alt="Digital Networking Graphic" />
 
-    <p>
-        This page provides contact information and links to professional profiles,
-        allowing employers and professional connections to learn more about my
-        background, interests, and future career goals.
-    </p>
-
-    <div class="contact-card">
-        <h2>Email Address</h2>
         <p>
-            <a href="mailto:zaydsidat05@gmail.com">
-                zaydsidat05@gmail.com
-            </a>
+            This page provides contact information and links to professional profiles,
+            allowing employers and professional connections to learn more about my
+            background, interests, and future career goals.
         </p>
-    </div>
 
-    <div class="contact-card">
-        <h2>Professional Profiles</h2>
-
-        <ul>
-            <li>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/zayd-sidat"
-                   target="_blank">
-                   www.linkedin.com/in/zayd-sidat
+        <div class="contact-item">
+            <h3>Email Address</h3>
+            <p>
+                <a href="mailto:zaydsidat05@gmail.com">
+                    zaydsidat05@gmail.com
                 </a>
-            </li>
-        </ul>
-    </div>
+            </p>
+        </div>
 
-    <div class="contact-card">
-        <h2>Career Interests</h2>
+        <div class="contact-item">
+            <h3>Professional Profiles</h3>
+            <ul>
+                <li>
+                    LinkedIn: 
+                    <a href="https://www.linkedin.com/in/zayd-sidat" target="_blank">
+                        www.linkedin.com/in/zayd-sidat
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Career Interests & Technology</h2>
+        
+        <Image src="image_generation_content/14959312190317737141" alt="Professional Business Analytics Desk Setup" />
 
         <p>
             I am currently studying Business Information Technology and have a
@@ -136,22 +189,25 @@
             career in technology that combines business knowledge with technical
             problem-solving skills.
         </p>
-    </div>
+    </section>
 
 </div>
+
+<footer>
+    <p>© 2026 Zayd Sidat Portfolio Website</p>
+</footer>
 
 <button id="topBtn" onclick="topFunction()">↑</button>
 
 <script>
-
 function topFunction() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 }
-
 </script>
 
 </body>
 </html>
+```[cite: 1]
