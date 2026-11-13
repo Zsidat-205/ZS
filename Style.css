@@ -40,11 +40,11 @@ body {
 /* Hero Section - Original Sunset Photograph */
 .hero {
     height: 100vh;
-    background:
+    background-image:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("85161.jpg");
+        url("./85161.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -53,7 +53,6 @@ body {
     color: white;
     padding: 20px;
 }
-
 
 .hero-content h1 {
     font-size: 4rem;
