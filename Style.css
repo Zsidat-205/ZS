@@ -111,6 +111,17 @@ body {
     border: 1px solid rgba(0, 119, 181, 0.08);
 }
 
+.cv-btn{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin-left: 12px;
+}
+
+.cv-btn:hover{
+    background: rgba(255,255,255,0.25);
+}
+
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(0, 119, 181, 0.12);
