@@ -75,23 +75,109 @@
                 <p>Book tables instantly through an easy-to-use reservation system.</p>
             </div>
             <div class="skill-box">
-                <h3>🎁 Steak Rewards Club</h3>
-                <p>Earn loyalty points and receive special offers for repeat visits.</p>
-            </div>
+    <h3>🎁 Steak Rewards Club</h3>
+
+    <p>
+        Earn points every time you dine with us and redeem rewards for
+        free food and exclusive offers.
+    </p>
+
+    <div class="rewards-box">
+        <h4>Your Reward Points</h4>
+        <div class="points-total">1,250 Points</div>
+
+        <p>Available Rewards:</p>
+
+        <ul>
+            <li>500 Points = Free Fries</li>
+            <li>1,000 Points = Free Dessert</li>
+            <li>2,000 Points = £15 Voucher</li>
+        </ul>
+    </div>
+</div>
             <div class="skill-box">
-                <h3>⭐ Customer Feedback</h3>
-                <p>Collect reviews and ratings to improve customer satisfaction.</p>
-            </div>
+    <h3>⭐ Customer Feedback</h3>
+
+    <p>
+        View customer reviews and filter ratings to understand customer satisfaction levels.
+    </p>
+
+    <select id="reviewFilter" onchange="filterReviews()">
+        <option value="all">All Reviews</option>
+        <option value="5">★★★★★ (5 Stars)</option>
+        <option value="4">★★★★☆ (4 Stars)</option>
+        <option value="3">★★★☆☆ (3 Stars)</option>
+        <option value="2">★★☆☆☆ (2 Stars)</option>
+        <option value="1">★☆☆☆☆ (1 Star)</option>
+    </select>
+
+    <div id="reviews">
+
+        <div class="review" data-rating="5">
+            ★★★★★ "Amazing food and fantastic service."
+        </div>
+
+        <div class="review" data-rating="4">
+            ★★★★☆ "Excellent steaks and quick booking process."
+        </div>
+
+        <div class="review" data-rating="5">
+            ★★★★★ "Best steakhouse experience I've had."
+        </div>
+
+        <div class="review" data-rating="3">
+            ★★★☆☆ "Food was great but waiting time was longer than expected."
+        </div>
+
+        <div class="review" data-rating="2">
+            ★★☆☆☆ "Limited availability during peak hours."
+        </div>
+
+    </div>
+</div>
             <div class="skill-box">
                 <h3>📱 Mobile Friendly</h3>
                 <p>Responsive design that works perfectly across all devices.</p>
             </div>
             <div class="skill-box">
-                <h3>📢 Promotions</h3>
-                <p>Advertise exclusive steak nights, seasonal menus and special events.</p>
-            </div>
+    <h3>📢 Promotions</h3>
+
+    <p>
+        Claim an exclusive 20% discount voucher for your next visit to
+        Sidat's Steakhouse.
+    </p>
+
+    <button class="voucher-btn" onclick="claimVoucher()">
+        Claim 20% Voucher
+    </button>
+
+    <div id="voucherMessage"></div>
+</div>
+
         </div>
     </section>
+
+    <section class="card steak-sundays">
+
+    <h2>🥩 Steak Sundays</h2>
+
+    <p class="steak-highlight">
+        Every Sunday enjoy 25% off all Signature Steaks from 4pm to 9pm.
+    </p>
+
+    <p>
+        Steak Sundays is a weekly promotional event designed to encourage
+        customer loyalty and increase restaurant traffic during quieter
+        periods. Guests can enjoy premium steak dishes at reduced prices
+        whilst experiencing the full Sidat's Steakhouse dining experience.
+    </p>
+
+    <p>
+        Advance booking is recommended due to limited availability.
+        Offers may vary during seasonal events and public holidays.
+    </p>
+
+</section>
 
     <section class="card">
         <h2>Benefits of the Website</h2>
@@ -220,7 +306,42 @@ function submitFeedback() {
     document.getElementById("feedbackForm").reset();
     document.getElementById("generatedEmail").textContent = "";
 }
+function claimVoucher() {
 
+    document.getElementById("voucherMessage").innerHTML =
+    `
+    <div class="voucher-success">
+        ✅ Voucher Claimed Successfully
+        <br>
+        Your code is:
+        <strong>STEAK20</strong>
+        <br>
+        Use this code to receive 20% off your next meal.
+    </div>
+    `;
+}
+function filterReviews() {
+
+    const selectedRating =
+    document.getElementById("reviewFilter").value;
+
+    const reviews =
+    document.querySelectorAll(".review");
+
+    reviews.forEach(review => {
+
+        if(
+            selectedRating === "all" ||
+            review.dataset.rating === selectedRating
+        ){
+            review.style.display = "block";
+        }
+        else{
+            review.style.display = "none";
+        }
+
+    });
+}
 function topFunction() {
     window.scrollTo({
         top: 0,
