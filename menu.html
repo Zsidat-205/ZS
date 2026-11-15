@@ -17,46 +17,73 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f4f6f9;
-    color:#333;
+    background:#111;
+    color:#fff;
 }
 
 header{
-    background:#111827;
-    color:white;
+    height:70vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("duckahouse-ai-generated-8006217.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:60px 20px;
 }
 
 header h1{
-    font-size:3rem;
-    margin-bottom:10px;
+    font-size:4rem;
+    color:#d4af37;
+}
+
+header p{
+    font-size:1.3rem;
+    margin-top:10px;
 }
 
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    padding:30px;
+    padding:40px 20px;
 }
 
 .menu-section{
-    background:white;
+    background:#1b1b1b;
     padding:30px;
-    margin-bottom:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom:35px;
+    border-radius:20px;
+    border:1px solid #2b2b2b;
+    transition:0.3s ease;
+    overflow:hidden;
+}
+
+.menu-section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(212,175,55,0.15);
 }
 
 .menu-section h2{
-    color:#0077b5;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.menu-image{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
     margin-bottom:20px;
 }
 
 .item{
     display:flex;
     justify-content:space-between;
-    border-bottom:1px solid #eee;
-    padding:14px 0;
+    padding:18px 0;
+    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .item:last-child{
@@ -64,29 +91,32 @@ header h1{
 }
 
 .price{
-    font-weight:bold;
-    color:#0077b5;
+    color:#d4af37;
+    font-weight:700;
+    font-size:1.1rem;
 }
 
 .back-btn{
     display:inline-block;
-    background:#0077b5;
-    color:white;
+    background:#d4af37;
+    color:#111;
     text-decoration:none;
-    padding:12px 24px;
-    border-radius:25px;
-    margin-top:15px;
+    padding:14px 30px;
+    border-radius:30px;
+    font-weight:600;
+    margin-top:20px;
+    transition:0.3s ease;
 }
 
 .back-btn:hover{
-    background:#005f8f;
+    background:#f3c95a;
 }
 
 footer{
-    background:#111827;
-    color:white;
+    background:#000;
     text-align:center;
-    padding:20px;
+    padding:25px;
+    color:#fff;
 }
 
 </style>
@@ -95,13 +125,16 @@ footer{
 <body>
 
 <header>
-    <h1>Sidat's Steakhouse</h1>
-    <p>Premium Steaks • Burgers • Grill • Desserts</p>
+    <div>
+        <h1>Sidat's Steakhouse</h1>
+        <p>Premium Steaks • Gourmet Burgers • Grill • Desserts</p>
+    </div>
 </header>
 
 <div class="container">
 
 <div class="menu-section">
+
 <h2>🥩 Signature Steaks</h2>
 
 <div class="item">
@@ -132,6 +165,9 @@ footer{
 </div>
 
 <div class="menu-section">
+    <img src="mrwashingt0n-ai-generated-10275058.png"
+     alt="Gourmet Burger"
+     class="menu-image">
 <h2>🍔 Gourmet Burgers</h2>
 
 <div class="item">
@@ -157,6 +193,9 @@ footer{
 </div>
 
 <div class="menu-section">
+    <img src="u_9cv22p8noy-lamb-chops-8824495.jpg"
+alt="Lamb Chops"
+class="menu-image">
 <h2>🍗 Grill Favourites</h2>
 
 <div class="item">
@@ -212,6 +251,9 @@ footer{
 </div>
 
 <div class="menu-section">
+    <img src="land_of_aahs-ai-generated-8602642.jpg"
+alt="Luxury Dessert"
+class="menu-image">
 <h2>🍰 Desserts</h2>
 
 <div class="item">
